@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iphone/Position/Detail</key>
+	<string>pageopen</string>
+	<key>iphone/Position/Search</key>
+	<string>expose</string>
+	<key>iPhone/My/Recommend</key>
+	<string>expose</string>
+	<key>iphone/Position/Operate?operateType=2&amp;deliveryWay=1</key>
+	<string>bdeliver</string>
+	<key>iphone/Position/Operate?operateType=2&amp;deliveryWay=0</key>
+	<string>deliver</string>
+</dict>
+</plist>
