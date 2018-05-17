@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ZPAR_common</key>
+	<dict>
+		<key>props</key>
+		<string>seid, actionid,projectid</string>
+		<key>basic</key>
+		<string>uid,evtid,pagecode</string>
+	</dict>
+	<key>expose</key>
+	<dict>
+		<key>props</key>
+		<string>method,rparams,rsltnum,jdlist,pageno,pagelim,selected,srchkey</string>
+	</dict>
+	<key>jdvsl_expose</key>
+	<dict>
+		<key>props</key>
+		<string>jdno, score, pos</string>
+	</dict>
+	<key>deliver</key>
+	<dict>
+		<key>props</key>
+		<string>jdno, rsmno, pos</string>
+	</dict>
+	<key>bdeliver</key>
+	<dict>
+		<key>props</key>
+		<string> jdlist, rsmno</string>
+	</dict>
+	<key>pagein</key>
+	<dict>
+		<key>props</key>
+		<string>jdno, refdesc, srccode</string>
+	</dict>
+	<key>pageout</key>
+	<dict>
+		<key>props</key>
+		<string>jdno, ref, timeonpage, refdesc, srccode</string>
+	</dict>
+	<key>pageopen</key>
+	<dict>
+		<key>props</key>
+		<string>jdno, refdesc, srccode</string>
+	</dict>
+	<key>pvtobottom</key>
+	<dict>
+		<key>props</key>
+		<string>jdno, refdesc, srccode</string>
+	</dict>
+</dict>
+</plist>

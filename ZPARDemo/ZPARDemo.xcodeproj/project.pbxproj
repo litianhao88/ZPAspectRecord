@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75425E7E20AD132D00B15753 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425E7D20AD132D00B15753 /* AppDelegate.m */; };
+		75425E8120AD132D00B15753 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425E8020AD132D00B15753 /* ViewController.m */; };
+		75425E8420AD132D00B15753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75425E8220AD132D00B15753 /* Main.storyboard */; };
+		75425E8620AD132D00B15753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75425E8520AD132D00B15753 /* Assets.xcassets */; };
+		75425E8920AD132D00B15753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75425E8720AD132D00B15753 /* LaunchScreen.storyboard */; };
+		75425E8C20AD132D00B15753 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425E8B20AD132D00B15753 /* main.m */; };
+		75425E9620AD132D00B15753 /* ZPARDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425E9520AD132D00B15753 /* ZPARDemoTests.m */; };
+		75425EA120AD132D00B15753 /* ZPARDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425EA020AD132D00B15753 /* ZPARDemoUITests.m */; };
+		75425EF620AD13BB00B15753 /* ZPARDemoVC_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425EF520AD13BB00B15753 /* ZPARDemoVC_A.m */; };
+		75425EF920AD13C900B15753 /* ZPARDemoVC_B.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425EF820AD13C900B15753 /* ZPARDemoVC_B.m */; };
+		75425EFC20AD13D400B15753 /* ZPARDemoVC_C.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425EFB20AD13D400B15753 /* ZPARDemoVC_C.m */; };
+		75425F0720AD174300B15753 /* ZPARMainProjectConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F0520AD174300B15753 /* ZPARMainProjectConfiger.m */; };
+		75425F4D20AD177400B15753 /* UIView+ZPARRecorderSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F0B20AD177300B15753 /* UIView+ZPARRecorderSupport.m */; };
+		75425F4E20AD177400B15753 /* UIViewController+ZPARRecordSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F0D20AD177300B15753 /* UIViewController+ZPARRecordSupport.m */; };
+		75425F4F20AD177400B15753 /* ZPARBaseModuleConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F1120AD177300B15753 /* ZPARBaseModuleConfiger.m */; };
+		75425F5020AD177400B15753 /* ZPARConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F1320AD177300B15753 /* ZPARConfiger.m */; };
+		75425F5120AD177400B15753 /* ZPARRecordContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F1620AD177300B15753 /* ZPARRecordContextManager.m */; };
+		75425F5220AD177400B15753 /* ZPARRecordGather.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F1920AD177300B15753 /* ZPARRecordGather.m */; };
+		75425F5320AD177400B15753 /* ZPARecorderBaseFuncImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F1C20AD177300B15753 /* ZPARecorderBaseFuncImp.m */; };
+		75425F5420AD177400B15753 /* ZPARecorderBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F2020AD177300B15753 /* ZPARecorderBase.m */; };
+		75425F5520AD177400B15753 /* ZPARMateDataRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F2220AD177300B15753 /* ZPARMateDataRecorder.m */; };
+		75425F5620AD177400B15753 /* ZPARNetRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F2420AD177300B15753 /* ZPARNetRecorder.m */; };
+		75425F5720AD177400B15753 /* ZPARUIRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F2620AD177300B15753 /* ZPARUIRecorder.m */; };
+		75425F5820AD177400B15753 /* ZPARNetContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F3A20AD177300B15753 /* ZPARNetContext.m */; };
+		75425F5920AD177400B15753 /* ZPARRecordContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F3C20AD177300B15753 /* ZPARRecordContext.m */; };
+		75425F5A20AD177400B15753 /* ZPARRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F3F20AD177300B15753 /* ZPARRecord.m */; };
+		75425F5B20AD177400B15753 /* ZPARStaticDataProviderIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F4120AD177300B15753 /* ZPARStaticDataProviderIMP.m */; };
+		75425F5C20AD177400B15753 /* ZPAR_evtid_paramkey_map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75425F4320AD177300B15753 /* ZPAR_evtid_paramkey_map.plist */; };
+		75425F5D20AD177400B15753 /* ZPAR_static_datakeys_type_map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75425F4420AD177300B15753 /* ZPAR_static_datakeys_type_map.plist */; };
+		75425F5E20AD177400B15753 /* ZPAR_url_netRecordType_map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75425F4520AD177300B15753 /* ZPAR_url_netRecordType_map.plist */; };
+		75425F5F20AD177400B15753 /* ZPAR_swizzling_method.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F4820AD177300B15753 /* ZPAR_swizzling_method.m */; };
+		75425F6020AD177400B15753 /* ZPARMacTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F4A20AD177300B15753 /* ZPARMacTime.m */; };
+		75425F7120AD1E2400B15753 /* ZPAR_url_netRecordType_map_mainProj.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75425F6D20AD1E2300B15753 /* ZPAR_url_netRecordType_map_mainProj.plist */; };
+		75425F7220AD1E2400B15753 /* ZPAR_evtid_paramkey_map_mainProj.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75425F6E20AD1E2400B15753 /* ZPAR_evtid_paramkey_map_mainProj.plist */; };
+		75425F7320AD1E2400B15753 /* ZPAR_MetaDataProviderKey_inputLoc_map_mainProj.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75425F6F20AD1E2400B15753 /* ZPAR_MetaDataProviderKey_inputLoc_map_mainProj.plist */; };
+		75425F7420AD1E2400B15753 /* ZPAR_static_datakeys_type_map_mainProj.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75425F7020AD1E2400B15753 /* ZPAR_static_datakeys_type_map_mainProj.plist */; };
+		75425F7720AD210B00B15753 /* ZPARDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F7620AD210B00B15753 /* ZPARDemoModel.m */; };
+		75425F8020AD278000B15753 /* NSString+ZPARSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F7F20AD278000B15753 /* NSString+ZPARSupport.m */; };
+		75425F8320AD278C00B15753 /* NSObject+ZPARModuleNameSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 75425F8220AD278C00B15753 /* NSObject+ZPARModuleNameSupport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75425E9220AD132D00B15753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75425E7120AD132D00B15753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75425E7820AD132D00B15753;
+			remoteInfo = ZPARDemo;
+		};
+		75425E9D20AD132D00B15753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75425E7120AD132D00B15753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75425E7820AD132D00B15753;
+			remoteInfo = ZPARDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75425E7920AD132D00B15753 /* ZPARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75425E7C20AD132D00B15753 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75425E7D20AD132D00B15753 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75425E7F20AD132D00B15753 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		75425E8020AD132D00B15753 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		75425E8320AD132D00B15753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75425E8520AD132D00B15753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75425E8820AD132D00B15753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75425E8A20AD132D00B15753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75425E8B20AD132D00B15753 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75425E9120AD132D00B15753 /* ZPARDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZPARDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75425E9520AD132D00B15753 /* ZPARDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPARDemoTests.m; sourceTree = "<group>"; };
+		75425E9720AD132D00B15753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75425E9C20AD132D00B15753 /* ZPARDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZPARDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75425EA020AD132D00B15753 /* ZPARDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPARDemoUITests.m; sourceTree = "<group>"; };
+		75425EA220AD132D00B15753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75425EF420AD13BB00B15753 /* ZPARDemoVC_A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPARDemoVC_A.h; sourceTree = "<group>"; };
+		75425EF520AD13BB00B15753 /* ZPARDemoVC_A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPARDemoVC_A.m; sourceTree = "<group>"; };
+		75425EF720AD13C900B15753 /* ZPARDemoVC_B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPARDemoVC_B.h; sourceTree = "<group>"; };
+		75425EF820AD13C900B15753 /* ZPARDemoVC_B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPARDemoVC_B.m; sourceTree = "<group>"; };
+		75425EFA20AD13D400B15753 /* ZPARDemoVC_C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPARDemoVC_C.h; sourceTree = "<group>"; };
+		75425EFB20AD13D400B15753 /* ZPARDemoVC_C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPARDemoVC_C.m; sourceTree = "<group>"; };
+		75425F0520AD174300B15753 /* ZPARMainProjectConfiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARMainProjectConfiger.m; sourceTree = "<group>"; };
+		75425F0620AD174300B15753 /* ZPARMainProjectConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARMainProjectConfiger.h; sourceTree = "<group>"; };
+		75425F0A20AD177300B15753 /* UIView+ZPARRecorderSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZPARRecorderSupport.h"; sourceTree = "<group>"; };
+		75425F0B20AD177300B15753 /* UIView+ZPARRecorderSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZPARRecorderSupport.m"; sourceTree = "<group>"; };
+		75425F0C20AD177300B15753 /* UIViewController+ZPARRecordSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZPARRecordSupport.h"; sourceTree = "<group>"; };
+		75425F0D20AD177300B15753 /* UIViewController+ZPARRecordSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZPARRecordSupport.m"; sourceTree = "<group>"; };
+		75425F1020AD177300B15753 /* ZPARBaseModuleConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARBaseModuleConfiger.h; sourceTree = "<group>"; };
+		75425F1120AD177300B15753 /* ZPARBaseModuleConfiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARBaseModuleConfiger.m; sourceTree = "<group>"; };
+		75425F1220AD177300B15753 /* ZPARConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARConfiger.h; sourceTree = "<group>"; };
+		75425F1320AD177300B15753 /* ZPARConfiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARConfiger.m; sourceTree = "<group>"; };
+		75425F1520AD177300B15753 /* ZPARRecordContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARRecordContextManager.h; sourceTree = "<group>"; };
+		75425F1620AD177300B15753 /* ZPARRecordContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARRecordContextManager.m; sourceTree = "<group>"; };
+		75425F1820AD177300B15753 /* ZPARRecordGather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARRecordGather.h; sourceTree = "<group>"; };
+		75425F1920AD177300B15753 /* ZPARRecordGather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARRecordGather.m; sourceTree = "<group>"; };
+		75425F1B20AD177300B15753 /* ZPARecorderBaseFuncImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARecorderBaseFuncImp.h; sourceTree = "<group>"; };
+		75425F1C20AD177300B15753 /* ZPARecorderBaseFuncImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARecorderBaseFuncImp.m; sourceTree = "<group>"; };
+		75425F1E20AD177300B15753 /* ZPARDataRecordMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARDataRecordMode.h; sourceTree = "<group>"; };
+		75425F1F20AD177300B15753 /* ZPARecorderBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARecorderBase.h; sourceTree = "<group>"; };
+		75425F2020AD177300B15753 /* ZPARecorderBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARecorderBase.m; sourceTree = "<group>"; };
+		75425F2120AD177300B15753 /* ZPARMateDataRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARMateDataRecorder.h; sourceTree = "<group>"; };
+		75425F2220AD177300B15753 /* ZPARMateDataRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARMateDataRecorder.m; sourceTree = "<group>"; };
+		75425F2320AD177300B15753 /* ZPARNetRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARNetRecorder.h; sourceTree = "<group>"; };
+		75425F2420AD177300B15753 /* ZPARNetRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARNetRecorder.m; sourceTree = "<group>"; };
+		75425F2520AD177300B15753 /* ZPARUIRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARUIRecorder.h; sourceTree = "<group>"; };
+		75425F2620AD177300B15753 /* ZPARUIRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARUIRecorder.m; sourceTree = "<group>"; };
+		75425F2920AD177300B15753 /* ZPARDataCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARDataCheck.h; sourceTree = "<group>"; };
+		75425F2B20AD177300B15753 /* ZPARRecordContextDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARRecordContextDataProvider.h; sourceTree = "<group>"; };
+		75425F2C20AD177300B15753 /* ZPARRecordDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARRecordDataProvider.h; sourceTree = "<group>"; };
+		75425F2E20AD177300B15753 /* ZPARModelRecorded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARModelRecorded.h; sourceTree = "<group>"; };
+		75425F2F20AD177300B15753 /* ZPARNetRecorded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARNetRecorded.h; sourceTree = "<group>"; };
+		75425F3020AD177300B15753 /* ZPARUIRecorded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARUIRecorded.h; sourceTree = "<group>"; };
+		75425F3220AD177300B15753 /* ZPARBaseFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARBaseFunc.h; sourceTree = "<group>"; };
+		75425F3320AD177300B15753 /* ZPARMateDataRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARMateDataRecord.h; sourceTree = "<group>"; };
+		75425F3420AD177300B15753 /* ZPARRecordBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARRecordBase.h; sourceTree = "<group>"; };
+		75425F3520AD177300B15753 /* ZPARRecordOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARRecordOutput.h; sourceTree = "<group>"; };
+		75425F3620AD177300B15753 /* ZPARUIRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARUIRecord.h; sourceTree = "<group>"; };
+		75425F3920AD177300B15753 /* ZPARNetContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARNetContext.h; sourceTree = "<group>"; };
+		75425F3A20AD177300B15753 /* ZPARNetContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARNetContext.m; sourceTree = "<group>"; };
+		75425F3B20AD177300B15753 /* ZPARRecordContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARRecordContext.h; sourceTree = "<group>"; };
+		75425F3C20AD177300B15753 /* ZPARRecordContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARRecordContext.m; sourceTree = "<group>"; };
+		75425F3E20AD177300B15753 /* ZPARRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARRecord.h; sourceTree = "<group>"; };
+		75425F3F20AD177300B15753 /* ZPARRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARRecord.m; sourceTree = "<group>"; };
+		75425F4020AD177300B15753 /* ZPARStaticDataProviderIMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARStaticDataProviderIMP.h; sourceTree = "<group>"; };
+		75425F4120AD177300B15753 /* ZPARStaticDataProviderIMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARStaticDataProviderIMP.m; sourceTree = "<group>"; };
+		75425F4320AD177300B15753 /* ZPAR_evtid_paramkey_map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZPAR_evtid_paramkey_map.plist; sourceTree = "<group>"; };
+		75425F4420AD177300B15753 /* ZPAR_static_datakeys_type_map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZPAR_static_datakeys_type_map.plist; sourceTree = "<group>"; };
+		75425F4520AD177300B15753 /* ZPAR_url_netRecordType_map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZPAR_url_netRecordType_map.plist; sourceTree = "<group>"; };
+		75425F4720AD177300B15753 /* ZPAR_swizzling_method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPAR_swizzling_method.h; sourceTree = "<group>"; };
+		75425F4820AD177300B15753 /* ZPAR_swizzling_method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPAR_swizzling_method.m; sourceTree = "<group>"; };
+		75425F4920AD177300B15753 /* ZPARMacTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARMacTime.h; sourceTree = "<group>"; };
+		75425F4A20AD177300B15753 /* ZPARMacTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPARMacTime.m; sourceTree = "<group>"; };
+		75425F4B20AD177300B15753 /* ZPARMarcos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARMarcos.h; sourceTree = "<group>"; };
+		75425F4C20AD177300B15753 /* ZPARRecordHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPARRecordHeader.h; sourceTree = "<group>"; };
+		75425F6D20AD1E2300B15753 /* ZPAR_url_netRecordType_map_mainProj.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZPAR_url_netRecordType_map_mainProj.plist; sourceTree = "<group>"; };
+		75425F6E20AD1E2400B15753 /* ZPAR_evtid_paramkey_map_mainProj.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZPAR_evtid_paramkey_map_mainProj.plist; sourceTree = "<group>"; };
+		75425F6F20AD1E2400B15753 /* ZPAR_MetaDataProviderKey_inputLoc_map_mainProj.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZPAR_MetaDataProviderKey_inputLoc_map_mainProj.plist; sourceTree = "<group>"; };
+		75425F7020AD1E2400B15753 /* ZPAR_static_datakeys_type_map_mainProj.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZPAR_static_datakeys_type_map_mainProj.plist; sourceTree = "<group>"; };
+		75425F7520AD210B00B15753 /* ZPARDemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPARDemoModel.h; sourceTree = "<group>"; };
+		75425F7620AD210B00B15753 /* ZPARDemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPARDemoModel.m; sourceTree = "<group>"; };
+		75425F7E20AD278000B15753 /* NSString+ZPARSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZPARSupport.h"; sourceTree = "<group>"; };
+		75425F7F20AD278000B15753 /* NSString+ZPARSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZPARSupport.m"; sourceTree = "<group>"; };
+		75425F8120AD278C00B15753 /* NSObject+ZPARModuleNameSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZPARModuleNameSupport.h"; sourceTree = "<group>"; };
+		75425F8220AD278C00B15753 /* NSObject+ZPARModuleNameSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZPARModuleNameSupport.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75425E7620AD132D00B15753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75425E8E20AD132D00B15753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75425E9920AD132D00B15753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75425E7020AD132D00B15753 = {
+			isa = PBXGroup;
+			children = (
+				75425E7B20AD132D00B15753 /* ZPARDemo */,
+				75425E9420AD132D00B15753 /* ZPARDemoTests */,
+				75425E9F20AD132D00B15753 /* ZPARDemoUITests */,
+				75425E7A20AD132D00B15753 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75425E7A20AD132D00B15753 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75425E7920AD132D00B15753 /* ZPARDemo.app */,
+				75425E9120AD132D00B15753 /* ZPARDemoTests.xctest */,
+				75425E9C20AD132D00B15753 /* ZPARDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75425E7B20AD132D00B15753 /* ZPARDemo */ = {
+			isa = PBXGroup;
+			children = (
+				75425F0820AD177300B15753 /* ZPAspectRecorder */,
+				75425EFD20AD156A00B15753 /* ZPARConfig */,
+				75425E7C20AD132D00B15753 /* AppDelegate.h */,
+				75425E7D20AD132D00B15753 /* AppDelegate.m */,
+				75425E7F20AD132D00B15753 /* ViewController.h */,
+				75425E8020AD132D00B15753 /* ViewController.m */,
+				75425E8220AD132D00B15753 /* Main.storyboard */,
+				75425E8520AD132D00B15753 /* Assets.xcassets */,
+				75425E8720AD132D00B15753 /* LaunchScreen.storyboard */,
+				75425E8A20AD132D00B15753 /* Info.plist */,
+				75425E8B20AD132D00B15753 /* main.m */,
+				75425EF320AD13A400B15753 /* vcs */,
+			);
+			path = ZPARDemo;
+			sourceTree = "<group>";
+		};
+		75425E9420AD132D00B15753 /* ZPARDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				75425E9520AD132D00B15753 /* ZPARDemoTests.m */,
+				75425E9720AD132D00B15753 /* Info.plist */,
+			);
+			path = ZPARDemoTests;
+			sourceTree = "<group>";
+		};
+		75425E9F20AD132D00B15753 /* ZPARDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75425EA020AD132D00B15753 /* ZPARDemoUITests.m */,
+				75425EA220AD132D00B15753 /* Info.plist */,
+			);
+			path = ZPARDemoUITests;
+			sourceTree = "<group>";
+		};
+		75425EF320AD13A400B15753 /* vcs */ = {
+			isa = PBXGroup;
+			children = (
+				75425EF420AD13BB00B15753 /* ZPARDemoVC_A.h */,
+				75425EF520AD13BB00B15753 /* ZPARDemoVC_A.m */,
+				75425EF720AD13C900B15753 /* ZPARDemoVC_B.h */,
+				75425EF820AD13C900B15753 /* ZPARDemoVC_B.m */,
+				75425EFA20AD13D400B15753 /* ZPARDemoVC_C.h */,
+				75425EFB20AD13D400B15753 /* ZPARDemoVC_C.m */,
+				75425F7520AD210B00B15753 /* ZPARDemoModel.h */,
+				75425F7620AD210B00B15753 /* ZPARDemoModel.m */,
+			);
+			path = vcs;
+			sourceTree = "<group>";
+		};
+		75425EFD20AD156A00B15753 /* ZPARConfig */ = {
+			isa = PBXGroup;
+			children = (
+				75425F6E20AD1E2400B15753 /* ZPAR_evtid_paramkey_map_mainProj.plist */,
+				75425F6F20AD1E2400B15753 /* ZPAR_MetaDataProviderKey_inputLoc_map_mainProj.plist */,
+				75425F7020AD1E2400B15753 /* ZPAR_static_datakeys_type_map_mainProj.plist */,
+				75425F6D20AD1E2300B15753 /* ZPAR_url_netRecordType_map_mainProj.plist */,
+				75425F0620AD174300B15753 /* ZPARMainProjectConfiger.h */,
+				75425F0520AD174300B15753 /* ZPARMainProjectConfiger.m */,
+			);
+			path = ZPARConfig;
+			sourceTree = "<group>";
+		};
+		75425F0820AD177300B15753 /* ZPAspectRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				75425F0920AD177300B15753 /* category */,
+				75425F0E20AD177300B15753 /* executor */,
+				75425F2720AD177300B15753 /* Interface */,
+				75425F3720AD177300B15753 /* Model */,
+				75425F4220AD177300B15753 /* resources */,
+				75425F4620AD177300B15753 /* utils */,
+				75425F4C20AD177300B15753 /* ZPARRecordHeader.h */,
+			);
+			path = ZPAspectRecorder;
+			sourceTree = "<group>";
+		};
+		75425F0920AD177300B15753 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				75425F0A20AD177300B15753 /* UIView+ZPARRecorderSupport.h */,
+				75425F0B20AD177300B15753 /* UIView+ZPARRecorderSupport.m */,
+				75425F0C20AD177300B15753 /* UIViewController+ZPARRecordSupport.h */,
+				75425F0D20AD177300B15753 /* UIViewController+ZPARRecordSupport.m */,
+				75425F7E20AD278000B15753 /* NSString+ZPARSupport.h */,
+				75425F7F20AD278000B15753 /* NSString+ZPARSupport.m */,
+				75425F8120AD278C00B15753 /* NSObject+ZPARModuleNameSupport.h */,
+				75425F8220AD278C00B15753 /* NSObject+ZPARModuleNameSupport.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		75425F0E20AD177300B15753 /* executor */ = {
+			isa = PBXGroup;
+			children = (
+				75425F0F20AD177300B15753 /* configs */,
+				75425F1420AD177300B15753 /* contextManager */,
+				75425F1720AD177300B15753 /* gather */,
+				75425F1A20AD177300B15753 /* persistence */,
+				75425F1D20AD177300B15753 /* recorder */,
+			);
+			path = executor;
+			sourceTree = "<group>";
+		};
+		75425F0F20AD177300B15753 /* configs */ = {
+			isa = PBXGroup;
+			children = (
+				75425F1020AD177300B15753 /* ZPARBaseModuleConfiger.h */,
+				75425F1120AD177300B15753 /* ZPARBaseModuleConfiger.m */,
+				75425F1220AD177300B15753 /* ZPARConfiger.h */,
+				75425F1320AD177300B15753 /* ZPARConfiger.m */,
+			);
+			path = configs;
+			sourceTree = "<group>";
+		};
+		75425F1420AD177300B15753 /* contextManager */ = {
+			isa = PBXGroup;
+			children = (
+				75425F1520AD177300B15753 /* ZPARRecordContextManager.h */,
+				75425F1620AD177300B15753 /* ZPARRecordContextManager.m */,
+			);
+			path = contextManager;
+			sourceTree = "<group>";
+		};
+		75425F1720AD177300B15753 /* gather */ = {
+			isa = PBXGroup;
+			children = (
+				75425F1820AD177300B15753 /* ZPARRecordGather.h */,
+				75425F1920AD177300B15753 /* ZPARRecordGather.m */,
+			);
+			path = gather;
+			sourceTree = "<group>";
+		};
+		75425F1A20AD177300B15753 /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				75425F1B20AD177300B15753 /* ZPARecorderBaseFuncImp.h */,
+				75425F1C20AD177300B15753 /* ZPARecorderBaseFuncImp.m */,
+			);
+			path = persistence;
+			sourceTree = "<group>";
+		};
+		75425F1D20AD177300B15753 /* recorder */ = {
+			isa = PBXGroup;
+			children = (
+				75425F1E20AD177300B15753 /* ZPARDataRecordMode.h */,
+				75425F1F20AD177300B15753 /* ZPARecorderBase.h */,
+				75425F2020AD177300B15753 /* ZPARecorderBase.m */,
+				75425F2120AD177300B15753 /* ZPARMateDataRecorder.h */,
+				75425F2220AD177300B15753 /* ZPARMateDataRecorder.m */,
+				75425F2320AD177300B15753 /* ZPARNetRecorder.h */,
+				75425F2420AD177300B15753 /* ZPARNetRecorder.m */,
+				75425F2520AD177300B15753 /* ZPARUIRecorder.h */,
+				75425F2620AD177300B15753 /* ZPARUIRecorder.m */,
+			);
+			path = recorder;
+			sourceTree = "<group>";
+		};
+		75425F2720AD177300B15753 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				75425F2820AD177300B15753 /* recordDataCheck */,
+				75425F2A20AD177300B15753 /* recordDataProvider */,
+				75425F2D20AD177300B15753 /* recorded */,
+				75425F3120AD177300B15753 /* recordEntity */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		75425F2820AD177300B15753 /* recordDataCheck */ = {
+			isa = PBXGroup;
+			children = (
+				75425F2920AD177300B15753 /* ZPARDataCheck.h */,
+			);
+			path = recordDataCheck;
+			sourceTree = "<group>";
+		};
+		75425F2A20AD177300B15753 /* recordDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				75425F2B20AD177300B15753 /* ZPARRecordContextDataProvider.h */,
+				75425F2C20AD177300B15753 /* ZPARRecordDataProvider.h */,
+			);
+			path = recordDataProvider;
+			sourceTree = "<group>";
+		};
+		75425F2D20AD177300B15753 /* recorded */ = {
+			isa = PBXGroup;
+			children = (
+				75425F2E20AD177300B15753 /* ZPARModelRecorded.h */,
+				75425F2F20AD177300B15753 /* ZPARNetRecorded.h */,
+				75425F3020AD177300B15753 /* ZPARUIRecorded.h */,
+			);
+			path = recorded;
+			sourceTree = "<group>";
+		};
+		75425F3120AD177300B15753 /* recordEntity */ = {
+			isa = PBXGroup;
+			children = (
+				75425F3220AD177300B15753 /* ZPARBaseFunc.h */,
+				75425F3320AD177300B15753 /* ZPARMateDataRecord.h */,
+				75425F3420AD177300B15753 /* ZPARRecordBase.h */,
+				75425F3520AD177300B15753 /* ZPARRecordOutput.h */,
+				75425F3620AD177300B15753 /* ZPARUIRecord.h */,
+			);
+			path = recordEntity;
+			sourceTree = "<group>";
+		};
+		75425F3720AD177300B15753 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75425F3820AD177300B15753 /* context */,
+				75425F3D20AD177300B15753 /* recordEntity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75425F3820AD177300B15753 /* context */ = {
+			isa = PBXGroup;
+			children = (
+				75425F3920AD177300B15753 /* ZPARNetContext.h */,
+				75425F3A20AD177300B15753 /* ZPARNetContext.m */,
+				75425F3B20AD177300B15753 /* ZPARRecordContext.h */,
+				75425F3C20AD177300B15753 /* ZPARRecordContext.m */,
+			);
+			path = context;
+			sourceTree = "<group>";
+		};
+		75425F3D20AD177300B15753 /* recordEntity */ = {
+			isa = PBXGroup;
+			children = (
+				75425F3E20AD177300B15753 /* ZPARRecord.h */,
+				75425F3F20AD177300B15753 /* ZPARRecord.m */,
+				75425F4020AD177300B15753 /* ZPARStaticDataProviderIMP.h */,
+				75425F4120AD177300B15753 /* ZPARStaticDataProviderIMP.m */,
+			);
+			path = recordEntity;
+			sourceTree = "<group>";
+		};
+		75425F4220AD177300B15753 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				75425F4320AD177300B15753 /* ZPAR_evtid_paramkey_map.plist */,
+				75425F4420AD177300B15753 /* ZPAR_static_datakeys_type_map.plist */,
+				75425F4520AD177300B15753 /* ZPAR_url_netRecordType_map.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		75425F4620AD177300B15753 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				75425F4720AD177300B15753 /* ZPAR_swizzling_method.h */,
+				75425F4820AD177300B15753 /* ZPAR_swizzling_method.m */,
+				75425F4920AD177300B15753 /* ZPARMacTime.h */,
+				75425F4A20AD177300B15753 /* ZPARMacTime.m */,
+				75425F4B20AD177300B15753 /* ZPARMarcos.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75425E7820AD132D00B15753 /* ZPARDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75425EA520AD132D00B15753 /* Build configuration list for PBXNativeTarget "ZPARDemo" */;
+			buildPhases = (
+				75425E7520AD132D00B15753 /* Sources */,
+				75425E7620AD132D00B15753 /* Frameworks */,
+				75425E7720AD132D00B15753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZPARDemo;
+			productName = ZPARDemo;
+			productReference = 75425E7920AD132D00B15753 /* ZPARDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75425E9020AD132D00B15753 /* ZPARDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75425EA820AD132D00B15753 /* Build configuration list for PBXNativeTarget "ZPARDemoTests" */;
+			buildPhases = (
+				75425E8D20AD132D00B15753 /* Sources */,
+				75425E8E20AD132D00B15753 /* Frameworks */,
+				75425E8F20AD132D00B15753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75425E9320AD132D00B15753 /* PBXTargetDependency */,
+			);
+			name = ZPARDemoTests;
+			productName = ZPARDemoTests;
+			productReference = 75425E9120AD132D00B15753 /* ZPARDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75425E9B20AD132D00B15753 /* ZPARDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75425EAB20AD132D00B15753 /* Build configuration list for PBXNativeTarget "ZPARDemoUITests" */;
+			buildPhases = (
+				75425E9820AD132D00B15753 /* Sources */,
+				75425E9920AD132D00B15753 /* Frameworks */,
+				75425E9A20AD132D00B15753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75425E9E20AD132D00B15753 /* PBXTargetDependency */,
+			);
+			name = ZPARDemoUITests;
+			productName = ZPARDemoUITests;
+			productReference = 75425E9C20AD132D00B15753 /* ZPARDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75425E7120AD132D00B15753 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = lth;
+				TargetAttributes = {
+					75425E7820AD132D00B15753 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					75425E9020AD132D00B15753 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75425E7820AD132D00B15753;
+					};
+					75425E9B20AD132D00B15753 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75425E7820AD132D00B15753;
+					};
+				};
+			};
+			buildConfigurationList = 75425E7420AD132D00B15753 /* Build configuration list for PBXProject "ZPARDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75425E7020AD132D00B15753;
+			productRefGroup = 75425E7A20AD132D00B15753 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75425E7820AD132D00B15753 /* ZPARDemo */,
+				75425E9020AD132D00B15753 /* ZPARDemoTests */,
+				75425E9B20AD132D00B15753 /* ZPARDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75425E7720AD132D00B15753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75425F5E20AD177400B15753 /* ZPAR_url_netRecordType_map.plist in Resources */,
+				75425E8920AD132D00B15753 /* LaunchScreen.storyboard in Resources */,
+				75425F7420AD1E2400B15753 /* ZPAR_static_datakeys_type_map_mainProj.plist in Resources */,
+				75425F7120AD1E2400B15753 /* ZPAR_url_netRecordType_map_mainProj.plist in Resources */,
+				75425F5C20AD177400B15753 /* ZPAR_evtid_paramkey_map.plist in Resources */,
+				75425F7320AD1E2400B15753 /* ZPAR_MetaDataProviderKey_inputLoc_map_mainProj.plist in Resources */,
+				75425F5D20AD177400B15753 /* ZPAR_static_datakeys_type_map.plist in Resources */,
+				75425F7220AD1E2400B15753 /* ZPAR_evtid_paramkey_map_mainProj.plist in Resources */,
+				75425E8620AD132D00B15753 /* Assets.xcassets in Resources */,
+				75425E8420AD132D00B15753 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75425E8F20AD132D00B15753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75425E9A20AD132D00B15753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75425E7520AD132D00B15753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75425EFC20AD13D400B15753 /* ZPARDemoVC_C.m in Sources */,
+				75425F5020AD177400B15753 /* ZPARConfiger.m in Sources */,
+				75425F5F20AD177400B15753 /* ZPAR_swizzling_method.m in Sources */,
+				75425F4E20AD177400B15753 /* UIViewController+ZPARRecordSupport.m in Sources */,
+				75425EF620AD13BB00B15753 /* ZPARDemoVC_A.m in Sources */,
+				75425F6020AD177400B15753 /* ZPARMacTime.m in Sources */,
+				75425F5A20AD177400B15753 /* ZPARRecord.m in Sources */,
+				75425F5820AD177400B15753 /* ZPARNetContext.m in Sources */,
+				75425F5B20AD177400B15753 /* ZPARStaticDataProviderIMP.m in Sources */,
+				75425E8120AD132D00B15753 /* ViewController.m in Sources */,
+				75425F5520AD177400B15753 /* ZPARMateDataRecorder.m in Sources */,
+				75425F5720AD177400B15753 /* ZPARUIRecorder.m in Sources */,
+				75425F5120AD177400B15753 /* ZPARRecordContextManager.m in Sources */,
+				75425F4F20AD177400B15753 /* ZPARBaseModuleConfiger.m in Sources */,
+				75425F4D20AD177400B15753 /* UIView+ZPARRecorderSupport.m in Sources */,
+				75425EF920AD13C900B15753 /* ZPARDemoVC_B.m in Sources */,
+				75425F8020AD278000B15753 /* NSString+ZPARSupport.m in Sources */,
+				75425F5220AD177400B15753 /* ZPARRecordGather.m in Sources */,
+				75425E8C20AD132D00B15753 /* main.m in Sources */,
+				75425F5320AD177400B15753 /* ZPARecorderBaseFuncImp.m in Sources */,
+				75425F5920AD177400B15753 /* ZPARRecordContext.m in Sources */,
+				75425F0720AD174300B15753 /* ZPARMainProjectConfiger.m in Sources */,
+				75425F7720AD210B00B15753 /* ZPARDemoModel.m in Sources */,
+				75425F5420AD177400B15753 /* ZPARecorderBase.m in Sources */,
+				75425E7E20AD132D00B15753 /* AppDelegate.m in Sources */,
+				75425F5620AD177400B15753 /* ZPARNetRecorder.m in Sources */,
+				75425F8320AD278C00B15753 /* NSObject+ZPARModuleNameSupport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75425E8D20AD132D00B15753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75425E9620AD132D00B15753 /* ZPARDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75425E9820AD132D00B15753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75425EA120AD132D00B15753 /* ZPARDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75425E9320AD132D00B15753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75425E7820AD132D00B15753 /* ZPARDemo */;
+			targetProxy = 75425E9220AD132D00B15753 /* PBXContainerItemProxy */;
+		};
+		75425E9E20AD132D00B15753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75425E7820AD132D00B15753 /* ZPARDemo */;
+			targetProxy = 75425E9D20AD132D00B15753 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75425E8220AD132D00B15753 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75425E8320AD132D00B15753 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75425E8720AD132D00B15753 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75425E8820AD132D00B15753 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75425EA320AD132D00B15753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75425EA420AD132D00B15753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75425EA620AD132D00B15753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46A29A7ADN;
+				INFOPLIST_FILE = ZPARDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lth.Demo.ZPARDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75425EA720AD132D00B15753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46A29A7ADN;
+				INFOPLIST_FILE = ZPARDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lth.Demo.ZPARDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75425EA920AD132D00B15753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46A29A7ADN;
+				INFOPLIST_FILE = ZPARDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lth.Demo.ZPARDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPARDemo.app/ZPARDemo";
+			};
+			name = Debug;
+		};
+		75425EAA20AD132D00B15753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46A29A7ADN;
+				INFOPLIST_FILE = ZPARDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lth.Demo.ZPARDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPARDemo.app/ZPARDemo";
+			};
+			name = Release;
+		};
+		75425EAC20AD132D00B15753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46A29A7ADN;
+				INFOPLIST_FILE = ZPARDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lth.Demo.ZPARDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZPARDemo;
+			};
+			name = Debug;
+		};
+		75425EAD20AD132D00B15753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46A29A7ADN;
+				INFOPLIST_FILE = ZPARDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lth.Demo.ZPARDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZPARDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75425E7420AD132D00B15753 /* Build configuration list for PBXProject "ZPARDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75425EA320AD132D00B15753 /* Debug */,
+				75425EA420AD132D00B15753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75425EA520AD132D00B15753 /* Build configuration list for PBXNativeTarget "ZPARDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75425EA620AD132D00B15753 /* Debug */,
+				75425EA720AD132D00B15753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75425EA820AD132D00B15753 /* Build configuration list for PBXNativeTarget "ZPARDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75425EA920AD132D00B15753 /* Debug */,
+				75425EAA20AD132D00B15753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75425EAB20AD132D00B15753 /* Build configuration list for PBXNativeTarget "ZPARDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75425EAC20AD132D00B15753 /* Debug */,
+				75425EAD20AD132D00B15753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75425E7120AD132D00B15753 /* Project object */;
+}
